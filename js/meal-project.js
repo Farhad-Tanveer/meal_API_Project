@@ -5,7 +5,7 @@ const loadMeals = (searchText) => {
     .then((data) => displayMeal(data.meals.slice(0, 4))); // when first start the function it will show 4 meals card
 };
 const displayMeal = (meals) => {
-  document.getElementById("search-field").value = ""; // empty the input field after search anything
+  //document.getElementById("search-field").value = ""; // empty the input field after search anything
   const mealsContainer = document.getElementById("meals-container");
   mealsContainer.innerHTML = ""; // after click the show all button it will remove all previous data from innerHTML
   meals.forEach((meal) => {
